@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd546700.css",
-    "main.js": "/static/js/main.fa654483.js",
+    "main.css": "/static/css/main.360183ad.css",
+    "main.js": "/static/js/main.c7e6ae3d.js",
     "static/media/ha-noi-1.png": "/static/media/ha-noi-1.78e33d0d7802f3fbacff.png",
     "static/media/introduce-1.jpg": "/static/media/introduce-1.eae8d1d9c64c8eb7c818.jpg",
     "static/media/mockup.png": "/static/media/mockup.f834ae5e325b006c612a.png",
@@ -38,11 +38,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.cd546700.css.map": "/static/css/main.cd546700.css.map",
-    "main.fa654483.js.map": "/static/js/main.fa654483.js.map"
+    "main.360183ad.css.map": "/static/css/main.360183ad.css.map",
+    "main.c7e6ae3d.js.map": "/static/js/main.c7e6ae3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd546700.css",
-    "static/js/main.fa654483.js"
+    "static/css/main.360183ad.css",
+    "static/js/main.c7e6ae3d.js"
   ]
 }

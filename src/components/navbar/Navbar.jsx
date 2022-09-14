@@ -65,7 +65,11 @@ const Navbar = () => {
       });
       navigate("/hotels", { state: { type, destination, dates, options } });
     } else if (page === "cart") {
-      if (!user) navigate("/login");
+      if (!user) {
+        navigate("/login");
+      } else {
+        navigate("/cart");
+      }
     } else {
       navigate(`/${page}`);
     }
