@@ -1,0 +1,131 @@
+.featured {
+  width: 100%;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+  height: 420px;
+}
+
+.featuredItem {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  cursor: pointer;
+}
+
+.responsiveItem {
+  display: none;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mediumFeatureItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 32%;
+}
+
+.featuredImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredTitles {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+/* ==================== MEDIA QUERIES ( lap 12 - 13") ==================== */
+@media screen and (max-width: 1280px) {
+}
+
+/* ==================== MEDIA QUERIES ( tablet rotate) ==================== */
+@media screen and (max-width: 1195px) {
+}
+
+/* ==================== MEDIA QUERIES ( Ipad pro) ==================== */
+@media screen and (max-width: 1024px) {
+  .mediumFeatureItem {
+    display: none;
+  }
+  .responsiveItem {
+    display: block;
+  }
+
+  .featured {
+    max-width: 94%;
+    height: 240px;
+    overflow-x: auto;
+  }
+
+  .featuredItem {
+    min-width: 500px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) (Phone rotate) ==================== */
+@media screen and (max-width: 930px) {
+}
+
+/* ==================== MEDIA QUERIES ( Iad 11") ==================== */
+@media screen and (max-width: 835px) {
+}
+
+/* ==================== MEDIA QUERIES ( Iad 10") ==================== */
+@media screen and (max-width: 835px) {
+}
+
+/* ==================== MEDIA QUERIES (Iphone 6,7,8+ rotate) ==================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICE small tablet rotate) ==================== */
+@media screen and (max-width: 668px) {
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) ==================== */
+@media screen and (max-width: 600px) {
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .homeContainer {
+    margin-top: 0;
+  }
+  
+  .featured {
+    max-width: 94%;
+    height: 140px;
+    overflow-x: auto;
+    border-radius: 10px;
+  }
+
+  .featuredItem {
+    min-width: 250px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (VERYSMALL DEVICE) ==================== */
+@media screen and (max-width: 384px) {
+}
+
+/* ==================== MEDIA QUERIES (VERYSMALL DEVICE) ==================== */
+@media screen and (max-width: 330px) {
+}

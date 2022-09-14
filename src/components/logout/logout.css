@@ -1,0 +1,38 @@
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.popup-content {
+  width: 30%;
+  border: 10px;
+}
+.content {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.logoutPopup > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+  z-index: 1;
+}
+.logoutButton {
+  margin-top: 10px;
+}
+.logout {
+  background-color: rgb(245, 52, 52);
+}

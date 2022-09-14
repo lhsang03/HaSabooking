@@ -1,0 +1,31 @@
+.footer{
+  width: 100%;
+  width: 1024px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.fLists{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.fList{
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem{
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .footer {
+    width: 100%;
+  }
+}

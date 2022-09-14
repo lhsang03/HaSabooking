@@ -1,0 +1,366 @@
+.blog > .container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.blogTitle {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.opening {
+  color: #9a9696;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 50px 0;
+  text-align: justify;
+}
+
+.type {
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.type1 {
+  display: flex;
+}
+
+.wrapPicture {
+  width: 50%;
+  position: relative;
+}
+
+.type1 .wrapPicture > .firstPic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.type1 .wrapPicture > .firstPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.type1 .wrapPicture > .secondPic {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  margin-left: 195px;
+}
+
+.type1 .wrapPicture > .secondPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.type1 .wrapPicture > .thirdPic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  top: 115px;
+  right: 95px;
+}
+
+.type1 .wrapPicture > .thirdPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.type2 {
+  display: flex;
+}
+
+.type2 .wrapPicture > .firstPic {
+  max-width: 65%;
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 65px;
+}
+
+.type2 .wrapPicture > .firstPic img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+
+.type2 .wrapPicture > .secondPic {
+  position: absolute;
+  width: 45%;
+  height: 50%;
+  bottom: 0px;
+  right: 285px;
+  background-color: rgb(212, 230, 230);
+  display: grid;
+  align-items: end;
+  border-top-left-radius: 43%;
+  border-top-right-radius: 43%;
+  padding: 10px;
+  border: 10px solid #f1f1f1;
+}
+
+.type2 .wrapPicture > .secondPic img {
+  width: 100%;
+}
+
+.type3 .wrapPicture > .firstPic {
+  width: 50%;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.type3 .wrapPicture > .firstPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 35%;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+
+.type3 .wrapPicture > .secondPic {
+  width: 40%;
+  height: 22vw;
+  object-fit: cover;
+  position: absolute;
+  top: 200px;
+  left: 230px;
+}
+
+.type3 .wrapPicture > .secondPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 35%;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+
+.type4 .wrapPicture {
+  margin-top: 100px;
+}
+
+.type4 .wrapPicture > .firstPic {
+  width: 45%;
+  height: 30%;
+  object-fit: cover;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.type4 .wrapPicture > .firstPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.type4 .wrapPicture > .secondPic {
+  width: 45%;
+  height: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.type4 .wrapPicture > .secondPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.type4 .wrapPicture > .thirdPic {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.type4 .wrapPicture > .thirdPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.type5 .wrapPicture > .firstPic {
+  width: 50%;
+  height: 30vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.type5 .wrapPicture > .firstPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.type5 .wrapPicture > .secondPic {
+  width: 40%;
+  height: 22vw;
+  object-fit: cover;
+  position: absolute;
+  top: 150px;
+  left: 230px;
+}
+
+.type5 .wrapPicture > .secondPic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.wrapDesc {
+  width: 50%;
+}
+
+.headline {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 65px;
+}
+
+.wrapDesc {
+  text-align: justify;
+}
+
+.wrapDesc > span {
+  color: #9a9696;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm,...) ==================== */
+@media screen and (max-width: 430px) {
+  .blog > .container {
+    width: 90%;
+    padding-top: 50px;
+  }
+
+  .type {
+    flex-direction: column;
+  }
+
+  .type1 .wrapPicture > .firstPic {
+    width: 180px;
+    height: 180px;
+    padding-left: 30px;
+  }
+
+  .type1 .wrapPicture > .secondPic {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    margin-left: 0;
+    padding-left: 160px;
+  }
+
+  .type1 .wrapPicture > .thirdPic {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    padding-left: 225px;
+  }
+
+  .type2 {
+    flex-direction: column-reverse;
+  }
+
+  .type2 .wrapPicture > .firstPic {
+    width: 210px;
+    height: 340px;
+    padding-left: 30px;
+    position: unset;
+  }
+
+  .type2 .wrapPicture > .secondPic {
+    width: 100px;
+    height: 150px;
+    left: 0;
+    margin-left: 175px;
+  }
+
+  .type3 .wrapPicture > .firstPic {
+    width: 200px;
+    height: 270px;
+    padding-left: 125px;
+    position: unset;
+  }
+
+  .type3 .wrapPicture > .secondPic {
+    width: 150px;
+    height: 200px;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding-left: 10px;
+  }
+
+  .type4 {
+    flex-direction: column-reverse;
+  }
+
+  .type4 .wrapPicture {
+    margin: 0;
+  }
+
+  .type4 .wrapPicture > .firstPic {
+    height: 105px;
+    margin-top: 25px;
+  }
+
+  .type4 .wrapPicture > .secondPic {
+    height: 120px;
+  }
+
+  .type4 .wrapPicture > .thirdPic {
+    width: 40%;
+    height: 290px;
+  }
+
+  .type5 .wrapPicture > .firstPic {
+    width: 55%;
+    height: 280px;
+    position: unset;
+    padding-left: 20px;
+  }
+
+  .type5 .wrapPicture > .secondPic {
+    width: 45%;
+    height: 220px;
+    left: 170px;
+    bottom: -30px;
+    top: auto;
+  }
+
+  .wrapPicture {
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapDesc {
+    width: 100%;
+  }
+}

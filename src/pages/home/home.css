@@ -1,0 +1,82 @@
+body {
+  background-color: #f1f1f1;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.homeContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeTitle {
+  width: 1024px;
+  font-size: 20px;
+}
+
+#root {
+  background-color: #f1f1f1;
+}
+
+/* ==================== MEDIA QUERIES ( Ipad pro) ==================== */
+@media screen and (max-width: 1024px) {
+  .homeTitle {
+    width: 940px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( 12prm rotate) ==================== */
+@media screen and (max-width: 930px) {
+  .homeContainer {
+    position: relative;
+  }
+
+  .homeTitle {
+    width: 860px;
+  }
+  .browseByCity {
+    position: absolute;
+    top: 243px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( tap s7+") ==================== */
+@media screen and (max-width: 877px) {
+  .homeTitle {
+    width: 800px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( Iad 11") ==================== */
+@media screen and (max-width: 835px) {
+  .homeTitle {
+    width: 745px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .homeContainer {
+    margin-top: 0;
+    position: relative;
+  }
+
+  .homeTitle {
+    width: 370px;
+  }
+
+  .browseByCity {
+    position: absolute;
+    top: 145px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (VERYSMALL DEVICE) ==================== */
+@media screen and (max-width: 384px) {
+  .homeTitle {
+    width: 320px;
+  }
+}

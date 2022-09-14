@@ -1,0 +1,283 @@
+.register {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  height: 700px;
+}
+
+.left {
+  width: 50%;
+  background-color: #0071c2;
+  height: 100%;
+  border-top-left-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+}
+
+.imgLeft > img {
+  width: 80%;
+  position: relative;
+  left: 40px;
+  top: 270px;
+}
+
+.right {
+  width: 50%;
+  background-color: #fff;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 80px 5px 80px;
+  align-items: center;
+}
+
+.logoregister {
+  font-size: 50px;
+  color: #7491d7;
+  border: 5px solid #f7f7fa;
+  padding: 17px;
+  border-radius: 50%;
+  background-color: #fafbff;
+  margin-bottom: 20px;
+}
+
+.registerHeader {
+  font-size: 40px;
+  align-content: center;
+  font-weight: 700;
+  color: #424049;
+}
+
+.content {
+  font-size: 12px;
+  color: #ceccd2;
+  text-align: center;
+}
+
+.reqInput {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.lInput {
+  height: 20px;
+  width: 100%;
+  margin: 10px 0 0 0;
+  border-radius: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #f1f0f4;
+  border-width: 1px;
+  background-color: #fafafd;
+}
+
+.lInput:hover {
+  outline: none !important;
+  border-color: #c1ceed;
+  box-shadow: 0 0 1px #c1ceed;
+  transition: all 0.5s ease;
+}
+
+.lInput:focus {
+  outline: none !important;
+  border-color: #7491d7;
+  box-shadow: 0 0 2px #7491d7;
+}
+
+.errInput {
+  outline: none !important;
+  border-color: #d26565;
+  box-shadow: 0 0 2px #d26565;
+}
+
+.errMessage {
+  color: #d26565;
+}
+
+.dot {
+  color: #fff;
+}
+
+.lInput:focus::placeholder {
+  color: #7491d7;
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+}
+
+.inputWrap > .symbol {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  color: #d1d1d6;
+  cursor: pointer;
+}
+
+.lInput:focus > .symbol {
+  color: #7491d7;
+}
+
+.reqInput > span {
+  font-size: 12px;
+  display: block;
+}
+
+.rButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #345bbe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.rButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+.linkToSignUp {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.signUp {
+  font-weight: 800;
+  color: #355bc0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ==================== MEDIA QUERIES ( Ipad pro) ==================== */
+@media screen and (max-height: 1400px) {
+}
+@media screen and (max-width: 1024px) {
+  .register {
+    width: 100%;
+    position: absolute;
+    top: 300px;
+  }
+
+  .register .lInput {
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+
+  .register .inputWrap > .symbol {
+    top: 13px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) (Phone rotate) ==================== */
+@media screen and (max-height: 1195px) and (max-width: 877px) {
+  .register {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 877px) {
+  .register {
+    width: 100%;
+    top: 150px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .register {
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .register .wrap {
+    height: 100vh;
+  }
+
+  .register .left {
+    display: none;
+  }
+
+  .register .right {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .register .lContainer {
+    margin: 70px 60px 5px 60px;
+  }
+
+  .register .linkToSignUp {
+    margin-top: 20px;
+  }
+
+  .register .lInput {
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-height: 926px) {
+  .register .lContainer {
+    margin-top: 60px;
+  }
+
+  .register .inputWrap > .symbol {
+    top: 13px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Iphone xsm) ==================== */
+@media screen and (max-width: 414px) {
+  .register {
+    margin: 0 auto;
+  }
+
+  .register .lContainer {
+    margin: 70px 30px 5px 30px;
+  }
+
+  .register .registerHeader {
+    width: max-content;
+  }
+
+  .register {
+    top: 0;
+  }
+
+  .register .registerHeader {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-height: 736px) {
+  .register .lContainer {
+    margin-top: 20px;
+  }
+
+  .register .reqInput {
+    margin: 0;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Iphone) ==================== */
+@media screen and (max-width: 376px) {
+  .register .registerHeader {
+    font-size: 32px;
+  }
+}

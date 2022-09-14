@@ -1,0 +1,264 @@
+.navbar {
+  height: 50px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  /* border-bottom: 1px solid #afaeae; */
+  padding: 20px;
+  position: sticky;
+  top: -1;
+  left: 0;
+  z-index: 7;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.scrollNavbar {
+  top: -55px;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 70%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 7;
+}
+
+.navContainerRes {
+  display: none;
+}
+
+.wrapLeftList {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-weight: 900;
+  color: black;
+  font-size: large;
+  border-right: 2px solid rgb(187, 185, 185);
+  padding-right: 20px;
+  line-height: 40px;
+}
+
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  background: #0071c2;
+}
+
+.cartIcon {
+  color: #0071c2;
+}
+
+.navList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+  color: rgb(154, 150, 150);
+  margin: 0;
+  margin-left: 20px;
+}
+
+.navListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navItemsUsername {
+  color: #0071c2;
+}
+
+.navListItem.active {
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.usernameWrap {
+  display: flex;
+}
+
+.overlayMenu {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  transition: 0.4s ease-in-out;
+  display: none;
+}
+
+.overlayMenuShow {
+  display: block !important;
+}
+
+.closeMenuIcon {
+  position: fixed;
+  top: 60px;
+  color: black;
+  left: -50vw;
+  transition: 0.4s;
+}
+
+/* ==================== MEDIA QUERIES ( tablet rotate) ==================== */
+@media screen and (max-width: 1195px) {
+  .navContainer {
+    max-width: 95%;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( LARGE DEVICE) ==================== */
+@media screen and (max-width: 1024px) {
+  .navContainer {
+    max-width: 90%;
+  }
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICE) ==================== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 14px;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    left: -55vw;
+    top: 0 !important;
+    height: 100vh;
+    width: 50vw;
+    justify-content: flex-start;
+    transition: 0.4s;
+  }
+
+  .navContainerShow {
+    left: 0 !important;
+  }
+
+  .closeMenuIconShow {
+    left: 50vw;
+  }
+
+  .wrapLeftList {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .navList {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .navListItem {
+    padding: 10px;
+  }
+
+  .navContainerRes {
+    display: flex;
+    align-items: center;
+    gap: 190px;
+  }
+
+  .iconMenu {
+    font-size: 45px;
+    cursor: pointer;
+  }
+
+  .logo {
+    border: none;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) (Phone rotate) ==================== */
+@media screen and (max-width: 930px) {
+  .navContainer {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .navList {
+    gap: 15px;
+  }
+
+  .navButton {
+    margin-left: 5px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICE small tablet rotate) ==================== */
+@media screen and (max-width: 668px) {
+  .navContainerRes {
+    gap: 140px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) ==================== */
+@media screen and (max-width: 600px) {
+  .navContainerRes {
+    gap: 120px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALLER DEVICE) ==================== */
+@media screen and (max-width: 430px) {
+  .navContainerRes {
+    gap: 65px;
+    padding: 5px 0;
+    background-color: #f1f1f1;
+    position: fixed;
+    z-index: 11;
+    top: -1px;
+    width: 100%;
+    transition: 0.7s;
+  }
+
+  .scrollNavbar {
+    top: -55px;
+  }
+
+  .registerBtn {
+    display: none;
+  }
+
+  .iconMenu {
+    margin-left: 20px;
+  }
+
+  .loginBtn {
+    margin-right: 20px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (VERYSMALL DEVICE) ==================== */
+@media screen and (max-width: 384px) {
+  .navContainerRes {
+    gap: 50px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (VERYSMALL DEVICE) ==================== */
+@media screen and (max-width: 330px) {
+  .navContainerRes {
+    gap: 30px;
+  }
+}

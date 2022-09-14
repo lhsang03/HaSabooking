@@ -1,0 +1,188 @@
+.searchItem {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  float: left;
+  flex-grow: 1;
+  width: 21%;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.searchItem > a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.siImg {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.siDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 2;
+}
+
+.siTitle {
+  font-size: 20px;
+  color: #0071c2;
+}
+
+.siDistance {
+  font-size: 12px;
+}
+
+.siTaxiOp {
+  font-size: 12px;
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.siSubtitle {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.siFeatures {
+  font-size: 12px;
+}
+
+.siCancelOp {
+  font-size: 12px;
+  color: #008009;
+  font-weight: bold;
+}
+
+.siCancelOpSubtitle {
+  font-size: 12px;
+  color: #008009;
+}
+
+.siDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.siRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.siRating > span {
+  margin-right: 5px;
+  color: white;
+  font-weight: 800;
+}
+.siRating > button {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.siDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.siPrice {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.siTaxOp {
+  font-size: 12px;
+  color: gray;
+}
+
+.siCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) (Phone rotate, ipad 11, tab s7+) ==================== */
+@media screen and (max-width: 930px) {
+  .searchItem {
+    width: 20%;
+  }
+
+  .searchItem img {
+    height: 110px;
+  }
+
+  .searchItem h1 {
+    font-size: 18px;
+  }
+
+  .searchItem span {
+    font-size: 11px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) (ipad 10", tab s7, tab a8) ==================== */
+@media screen and (max-width: 811px) {
+  .searchItem {
+    width: 19%;
+  }
+
+  .searchItem img {
+    height: 95px;
+  }
+
+  .searchItem h1 {
+    font-size: 16px;
+  }
+
+  .searchItem span {
+    font-size: 9px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+
+  .searchItem {
+    width: 41%;
+    margin: 5px;
+  }
+
+  .siImg {
+    height: 100px;
+  }
+
+  .siDistance {
+    font-size: 10px;
+  }
+
+  .siSubtitle {
+    font-size: 10px;
+  }
+}

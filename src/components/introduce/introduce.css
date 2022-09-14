@@ -1,0 +1,243 @@
+.introduce {
+  margin-top: 50px;
+}
+
+.ourPurpose {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+
+.ourPurpose > .wrapImg {
+  width: 140%;
+  position: relative;
+}
+
+.bigImg {
+  max-width: 90%;
+}
+
+.bigImg > img {
+  height: 600px;
+  max-width: 90%;
+  object-fit: cover;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+
+.smallImg {
+  position: absolute;
+  width: 55%;
+  bottom: -80px;
+  right: 0;
+  height: 400px;
+  background-color: rgb(212, 230, 230);
+  display: grid;
+  align-items: end;
+  border-top-left-radius: 43%;
+  border-top-right-radius: 43%;
+  padding: 10px;
+  border: 10px solid #f1f1f1;
+}
+
+.smallImg > img {
+  width: 100%;
+}
+
+.ourPurpose > .wrapContent {
+  padding-left: 40px;
+  max-width: 50%;
+}
+
+.wrapContent > .ourTitle {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  margin-top: 180px;
+}
+
+.wrapContent > span {
+  color: #9a9696;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.statistics {
+  margin-top: 50px;
+  display: flex;
+  gap: 100px;
+}
+
+.statisticsItem {
+  font-size: 40px;
+  font-weight: 600;
+  color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.statisticsItem > span {
+  font-size: 14px;
+  color: #9a9696;
+}
+
+.ourApp {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.ourApp > .wrapImg {
+  width: 140%;
+  position: relative;
+}
+
+.ourApp .bigImg {
+  width: fit-content;
+}
+
+.ourApp .bigImg > img {
+  border-radius: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+.ourApp .smallImg {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  top: 105px !important;
+  width: 50%;
+  height: fit-content;
+}
+
+.ourApp > .wrapContent {
+  padding-right: 40px;
+  max-width: 50%;
+}
+
+.ourApp .wrapItem {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.ourApp .wrapItem .googlePlay > img {
+  width: 130px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.ourApp .wrapItem .appStore > img {
+  width: 130px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.rectangle {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(70, 118, 208);
+  transform: rotate(45deg);
+  border-radius: 20%;
+  position: absolute;
+  left: 115px;
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm,...) ==================== */
+@media screen and (max-width: 430px) {
+  .ourPurpose {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    max-width: 90%;
+  }
+
+  .ourPurpose .bigImg {
+    max-width: 60%;
+    position: unset;
+  }
+
+  .ourPurpose .bigImg > img {
+    height: 400px;
+  }
+
+  .ourPurpose .smallImg {
+    max-width: 40%;
+    height: 250px;
+    right: auto;
+    left: 120px;
+  }
+
+  .ourPurpose .wrapContent > .ourTitle {
+    margin-top: 0px !important;
+  }
+
+  .statistics {
+    gap: 35px;
+  }
+
+  .statisticsItem {
+    font-size: 30px;
+  }
+
+  .wrapContent {
+    padding-left: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .wrapContent > .ourTitle {
+    margin-top: 50px;
+  }
+
+  .ourApp {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .ourApp .bigImg {
+    height: 320px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+  }
+
+  .ourApp .bigImg > img {
+    border-radius: 0;
+    max-width: 100%;
+    position: unset;
+    height: 100%;
+  }
+
+  .ourApp .smallImg {
+    height: 250px;
+    left: 165px;
+    top: 55px !important;
+  }
+
+  .ourApp .smallImg > img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .ourApp .wrapContent {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .rectangle {
+    position: unset;
+    width: 190px;
+    height: 190px;
+    margin-left: 115px;
+    margin-top: 15px;
+  }
+}

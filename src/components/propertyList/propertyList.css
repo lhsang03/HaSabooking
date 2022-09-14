@@ -1,0 +1,77 @@
+.pList {
+  width: 100%;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pListItem {
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  width: 25%;
+  margin: 15px 0;
+  height: 44px;
+}
+
+.pListImg {
+  width: 24%;
+  object-fit: cover;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+
+.pListTitles > h1 {
+  font-size: 18px;
+  color: #444;
+}
+
+.pListTitles > h2 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* ==================== MEDIA QUERIES ( Ipad pro) ==================== */
+@media screen and (max-width: 1024px) {
+  .pList {
+    max-width: 94%;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( tap s7, tap a8) ==================== */
+@media screen and (max-width: 800px) {
+  .pList {
+    max-width: 97%;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( 12mini rotate) ==================== */
+@media screen and (max-width: 781px) {
+  .pListTitles > h1 {
+    font-size: 16px;
+  }
+
+  .pListTitles > h2 {
+    font-size: 12px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .pList {
+    max-width: 94%;
+  }
+
+  .pListItem {
+    width: 50%;
+  }
+
+  .pListTitles > h1 {
+    font-size: 15px;
+  }
+
+  .pListTitles > h2 {
+    font-size: 10px;
+  }
+}

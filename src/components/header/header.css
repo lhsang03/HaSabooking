@@ -1,0 +1,339 @@
+.header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  background-color: #f1f1f1;
+}
+
+.headerSlider {
+  height: 500px;
+  max-width: 1300px;
+  position: absolute;
+}
+
+.sliderContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.sliderContainer img {
+  width: 100%;
+  height: 500px;
+  min-width: 1300px;
+  border-radius: 20px;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTitle {
+  font-size: 50px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.headerBtn {
+  background-color: #000;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.headerSearch {
+  height: 55px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 75px;
+  width: 100%;
+  max-width: 885px;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerTitleSearchItem {
+  color: #000;
+  font-weight: 700;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+.headerSearchBtn {
+  color: #000;
+  background-color: rgb(239, 237, 237);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.headerSearchIcon {
+  width: 20px;
+  height: auto;
+}
+
+/* ==================== MEDIA QUERIES ( lap 12 - 13") ==================== */
+@media screen and (max-width: 1280px) {
+  .sliderContainer img {
+    min-width: 1200px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( tablet rotate) ==================== */
+@media screen and (max-width: 1195px) {
+  .sliderContainer img {
+    min-width: 1100px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( Ipad pro) ==================== */
+@media screen and (max-width: 1080px) {
+  .sliderContainer img {
+    min-width: 970px;
+  }
+
+  .headerContainer {
+    width: 85%;
+  } 
+
+}
+
+/* ==================== MEDIA QUERIES ( Ipad pro) ==================== */
+@media screen and (max-width: 1024px) {
+  .sliderContainer img {
+    min-width: 970px;
+  }
+
+  .headerSearch {
+    width: 89%;
+    bottom: 55px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) (Phone rotate) ==================== */
+@media screen and (max-width: 930px) {
+  .headerSlider {
+    max-width: 820px;
+  }
+
+  .sliderContainer img {
+    min-width: 820px;
+  }
+
+  .headerTitle {
+    font-size: 50px;
+  }
+
+  .headerContainer {
+    width: 85%;
+  } 
+}
+
+/* ==================== MEDIA QUERIES ( Iad 11") ==================== */
+@media screen and (max-width: 835px) {
+  .headerSlider {
+    max-width: 750px;
+  }
+
+  .headerContainer {
+    width: 74%;
+  }
+
+  .sliderContainer img {
+    min-width: 700px;
+  }
+
+  .headerSearch {
+    width: 86%;
+    bottom: 55px;
+  }
+
+  .headerSearchItem > .headerSearchInput {
+    width: 135px;
+  }
+
+  .headerSearchItem > span {
+    font-size: 13px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( Iad 10") ==================== */
+@media screen and (max-width: 835px) {
+}
+
+/* ==================== MEDIA QUERIES (Iphone 6,7,8+ rotate) ==================== */
+@media screen and (max-width: 768px) {
+  .headerSearch {
+    width: 89%;
+    bottom: 30px;
+  }
+
+  .headerSlider {
+    max-width: 700px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICE small tablet rotate) ==================== */
+@media screen and (max-width: 668px) {
+  .headerSearch {
+    display: none;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICE) ==================== */
+@media screen and (max-width: 600px) {
+}
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .header {
+    height: max-content;
+  }
+
+  .headerSlider {
+    max-width: 365px;
+    max-height: 400px;
+  }
+
+  .sliderContainer img {
+    min-width: 300px;
+    max-height: 400px;
+  }
+
+  .headerTitle {
+    font-size: 40px;
+  }
+
+  .headerDesc {
+    font-size: 15px;
+  }
+
+  .headerBtn {
+    line-height: 10px;
+    height: 30px;
+  }
+
+  .headerSearch {
+    display: none;
+  }
+}
+
+/* ==================== MEDIA QUERIES (Ss s20+) ==================== */
+@media screen and (max-width: 384px) {
+  .headerSlider {
+    max-width: 330px;
+  }
+
+  .sliderContainer img {
+    min-width: 280px;
+  }
+}
+
+/* ==================== MEDIA QUERIES ( iphone 6, 7, 8, 11 pro, xs, mini, s20) ==================== */
+@media screen and (max-width: 376px) {
+  .header {
+    height: 415px;
+  }
+}
+
+
+/* ==================== MEDIA QUERIES (VERYSMALL DEVICE) ==================== */
+@media screen and (max-width: 330px) {
+  .headerTitle {
+    font-size: 35px;
+  }
+
+  .headerSlider {
+    max-width: 280px;
+  }
+
+  .sliderContainer img {
+    min-width: 270px;
+  }
+}
