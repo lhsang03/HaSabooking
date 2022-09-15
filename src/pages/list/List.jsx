@@ -152,7 +152,7 @@ const List = () => {
       <div className="headerInList">
         <Header />
       </div>
-      <div className="listSearchRes" style={{position: "sticky", top: "-1px"}}>
+      <div className="listSearchRes" style={{position: "sticky", top: "-1px", transition: "0.7s"}}>
         <div className="listSearchResWrap">
           <div className="infoDestination">
             {destination ? destination : "Destination"}
