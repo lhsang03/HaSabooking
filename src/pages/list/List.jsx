@@ -403,11 +403,29 @@ const List = () => {
           <div className="overlayFilter" onClick={handleOpenFilter}></div>
           <div className="filterModal">
             <div className="filterContainer">
+              <div
+                className="closeBtn"
+                onClick={() => {
+                  handleClick();
+                  handleOpenFilter();
+                }}
+              >
+                &#10540;
+              </div>
               <div className="filterHeader">Filter</div>
               <div className="wrapOption">
                 <div className="filterOption">
                   <label htmlFor="">Destination</label>
-                  <div className="value">Value</div>
+                  <div className="value">
+                    <input
+                      id="inputDestination"
+                      placeholder={
+                        destination ? destination : "Enter your destination"
+                      }
+                      type="text"
+                      onChange={(e) => setDestination(e.target.value)}
+                    />
+                  </div>
                 </div>
               </div>
 

@@ -36,3 +36,24 @@
 .logout {
   background-color: rgb(245, 52, 52);
 }
+
+/* ==================== MEDIA QUERIES (Iphone 12prm) ==================== */
+@media screen and (max-width: 430px) {
+  .logoutPopup {
+    width: fit-content !important;
+    position: relative;
+  }
+
+  .logoutPopup > .close {
+    right: -10px;
+  }
+
+  .content {
+    width: fit-content;
+    border-radius: 10px;
+  }
+
+  .logoutButton {
+    display: flex;
+  }
+}

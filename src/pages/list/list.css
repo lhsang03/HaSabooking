@@ -262,7 +262,6 @@
   .listWrapper {
     max-width: 100%;
   }
-
 }
 
 /* ==================== MEDIA QUERIES (SMALL DEVICE) (Phone rotate, ipad 11, tab s7+) ==================== */
@@ -463,15 +462,29 @@
     margin: 10px;
     gap: 15px;
     overflow-x: auto;
-    
   }
 
-  .typeOptions .type{
+  .typeOptions .type {
     background-color: #000;
     color: #fff;
     padding: 5px 25px;
     border-radius: 15px;
     cursor: pointer;
+  }
+
+  #inputDestination {
+    border-radius: 10px;
+    height: 10px;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+  .closeBtn {
+    z-index: 10;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    font-size: 35px;
   }
 
   .wrapOption:nth-last-child(4) > .typeOptions {
