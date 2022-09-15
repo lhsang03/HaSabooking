@@ -201,8 +201,8 @@ const Login = () => {
         </div>
         <div className="right">
           <div className="lContainer">
-            <FontAwesomeIcon className="logoLogin" icon={faHotel} />
-            <div className="loginHeader">Welcome!</div>
+            <FontAwesomeIcon className="logoregister" icon={faHotel} />
+            <div className="registerHeader">Welcome!</div>
             <div className="content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
