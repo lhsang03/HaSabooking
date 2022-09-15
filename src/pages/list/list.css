@@ -291,8 +291,8 @@
 
   .listSearchRes {
     display: block;
-    position: sticky;
-    top: -1px;
+    /* position: sticky;
+    top: -1px; */
     z-index: 4;
     background-color: #fff;
     height: 55px;
